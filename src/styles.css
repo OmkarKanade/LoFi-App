@@ -1,0 +1,144 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+html {
+  background-image: url("images/lofi-1.jpg");
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: none;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css");
+
+.handle {
+  cursor: move;
+}
+
+.weather-app {
+  background: #fff;
+  color: #444;
+  width: 235px;
+  margin: 0 auto;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+.weather-app .date-time {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #959595;
+  padding-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.weather-app .time {
+  font-size: 2em;
+  float: left;
+  overflow: hidden;
+}
+.weather-app .time span {
+  font-size: 0.3em;
+  font-weight: bold;
+  line-height: 1.25em;
+  vertical-align: top;
+}
+.weather-app .date {
+  float: left;
+  margin-left: 2.25%;
+  margin-top: 10px;
+}
+.weather-app .date .day {
+  font-weight: bold;
+}
+.weather-app .weather-icon {
+  font-size: 2.2em;
+  line-height: 2.4em;
+  content: "";
+  height: 70px;
+  width: 70px;
+  color: #fff;
+  background: #444;
+  z-index: 0.5;
+  border-radius: 40%;
+  border: 3px solid #1e90ff;
+  /*POSITION*/
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  position: absolute;
+}
+
+.weather-app .location-weather,
+.weather-app .weather-temp {
+  font-size: 80%;
+}
+.weather-app .location-weather {
+  /*POSITION*/
+  position: relative;
+}
+
+.weather-app .location-weather .city {
+  font-weight: bold;
+  font-size: 1.25em;
+  line-height: 0.9em;
+}
+.weather-app .location-weather .forcast {
+  font-size: 0.9em;
+  color: #999;
+  text-transform: capitalize;
+}
+.weather-app .weather-temp {
+  float: right;
+  overflow: hidden;
+  margin-top: -25px;
+}
+.weather-app .weather-temp .temperature {
+  color: #1e90ff;
+  float: left;
+  font-weight: bold;
+  font-size: 2.7em;
+  line-height: 1em;
+  margin-right: 5px;
+  margin-top: -5px;
+}
+.weather-app .weather-temp .temperature:after {
+  content: "°";
+  font-size: 0.7em;
+  line-height: 1.25em;
+  vertical-align: text-top;
+}
+.weather-app .weather-temp .high-low {
+  color: #999;
+  line-height: 1.2em;
+  float: right;
+  text-align: right;
+}
+.weather-app .weather-temp .high-low .high:after,
+.weather-app .weather-temp .high-low .low:after {
+  content: "°";
+  font-size: 0.7em;
+  line-height: 1.25em;
+  vertical-align: text-top;
+}
+
+.glassmor {
+  background: rgba(255, 255, 255, 0.01);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glassmorc {
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
